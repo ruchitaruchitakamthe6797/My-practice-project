@@ -21,6 +21,8 @@ public class BaseClassUSingProperty {
 		driver=new ChromeDriver();
 		driver.get(UtilityClassUsingProperty.readDataUsingProperty("URL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(0));
+
+		
 	}
 	public void ScrenShot(String tcname) throws IOException {
 		 File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);	
